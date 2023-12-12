@@ -1,3 +1,3 @@
 export default function test() {
-  return <h1>hello from footer Page</h1>;
+  return <footer>CopyRight Reserved by Ellie Solhjou 2023</footer>;
 }

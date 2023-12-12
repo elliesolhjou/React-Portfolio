@@ -7,6 +7,7 @@ import Project from "../pages/Project"
 import Skills from "../pages/Skills"
 import Contact from "../pages/Contact"
 import Footer from "../Footer/Footer"
+import Error from "../pages/Error"
 import './App.css'
 
 function App() {
@@ -14,10 +15,9 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='Header'>
-        <h1>Hello</h1>
+      <nav className='Header'>
         <Header />
-      </div>
+      </nav>
       <main>
         <Routes>
           <Route path='/' element={<Main />} />
@@ -25,6 +25,7 @@ function App() {
           <Route path="/projects/:id" element={<Project />}/>
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
       </main>
       <div className='Footer'>

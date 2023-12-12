@@ -1,6 +1,6 @@
 [
     {
-      "name": "project1",
+      "name": "Memory Game",
       "live": "https://app.herokuapp.com/whatever",
       "git": "http://www.github.com/username/reponame",
       "image": "http://www.imgur.com/pictureofproject.png"
