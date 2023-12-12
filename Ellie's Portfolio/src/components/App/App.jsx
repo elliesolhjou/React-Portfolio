@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { Routes, Route } from "react-router-dom"
 import Header from "../Header/Header"
-import Main from "../pages/main"
-import ProjectList from "../pages/projectList"
-import Project from "../pages/project"
+import Main from "../pages/Main"
+import ProjectList from "../pages/ProjectList"
+import Project from "../pages/Project"
+import Skills from "../pages/Skills"
+import Contact from "../pages/Contact"
 import Footer from "../Footer/Footer"
 import './App.css'
 
@@ -13,6 +15,7 @@ function App() {
   return (
     <div className='App'>
       <div className='Header'>
+        <h1>Hello</h1>
         <Header />
       </div>
       <main>
@@ -20,6 +23,8 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path="/projects" element={<ProjectList />}/>
           <Route path="/projects/:id" element={<Project />}/>
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <div className='Footer'>
