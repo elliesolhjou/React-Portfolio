@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import "../pages/styles.css";
+
 
 function Main() {
   const [about, setAbout] = useState([]);
@@ -6,9 +8,9 @@ function Main() {
   // create function to make api call
   const getAboutData = async () => {
     // make api call and get response
-    const response = await fetch("./about.json");
+    const response = await fetch("/about.json");
     const data = await response.json();
-    setAbout(data.basics);
+    setAbout(data);
   };
 
   useEffect(() => {
@@ -16,10 +18,12 @@ function Main() {
   }, []);
 
   const loaded = () => (
-    <div>
-      <h2>{about.name}</h2>
-      <h2>{about.email}</h2>
-      <h2>{about.bio}</h2>
+    <div style={{marginTop: "55px"}}>
+      <p className="about-bio">{about.bio}</p>
+      <a href={about.resume} download={about.resume}>
+      <button>Download Resume</button>
+      </a>
+      <div>{about.headshot}</div>
     </div>
   );
 

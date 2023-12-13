@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import { Routes, Route } from "react-router-dom"
 import Header from "../Header/Header"
-import Main from "../pages/Main"
-import ProjectList from "../pages/ProjectList"
-import Skills from "../pages/Skills"
+import About from "../pages/About"
+import Projects from "../pages/Projects"
 import Contact from "../pages/Contact"
 import Footer from "../Footer/Footer"
 import Error from "../pages/Error"
@@ -11,68 +10,20 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
-    <div className='App'>
-      <nav className='Header'>
+    <div className='App background-container'>
+      <nav className='header'>
         <Header />
       </nav>
       <main>
         <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path="/projects" element={<ProjectList />}/>
-          <Route path="/skills" element={<Skills />} />
+          <Route path='/' element={<About />} />
+          <Route path="/projects" element={<Projects />}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Error />} />
         </Routes>
       </main>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div className='Footer'>
+      <div className='footer'>
         <Footer />
       </div>
     </div>

@@ -3,9 +3,64 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-image: url("http://r.weavesilk.com/?v=4&id=wkz4g6zjf87");
 }
 
-.logo {
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 1em;
+
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes moveBackground {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100%, -100%);
+  }
+}
+
+.background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: url('data:image/png;base64,base64ImageHere') center center fixed;
+  background-size: cover;
+  animation: moveBackground 1s linear infinite; /* Adjust duration and timing function as needed */
+}
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +94,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

@@ -1,6 +1,7 @@
 {
-    "name": "Ellie Solhjou",
-    "email": "elliesolhjou@gmail.com",
-    "headshot": "https://media.licdn.com/dms/image/D5603AQFN3euBsGGREA/profile-displayphoto-shrink_800_800/0/1699563193624?e=1707955200&v=beta&t=9s6tV0qf_mF0v3B6U-3BiO4FhOPWsHuPi9uh3GyxkEs",
-    "bio": "Ellie graduated from General Assembly in 2023. Afterwords, he went to work for XYZ Technologies where he maintained a full-stack application using Meteor and Ember. He also recently started learning Prolog, cause why not waste time."
-  }
+  "name": "Ellie Solhjou",
+  "email": "elliesolhjou@gmail.com",
+  "headshot": "../src/assets/Screenshot 2023-10-15 at 6.30.46 PM.png",
+  "bio": "Hey there! I'm currently on an exciting path to becoming a software engineer, driven by my love for creative problem-solving. With a background in project management—where I got to lead construction projects worth over $200 million—I discovered my knack for paying attention to the nitty-gritty details. \n During this time, I had the fantastic opportunity to collaborate with diverse IT and software engineering teams on some cool smart building projects. These experiences ignited my curiosity and passion for software engineering. I was hooked! In my recent bootcamp journey, I dove into the world of programming languages like HTML, CSS, JavaScript, and Python. But it's not just about the code! I've also been working on important soft skills like paying attention to the little things, effective communication, and being an awesome team player. I truly believe these qualities are key to rocking it in the dynamic field of software engineering. Super excited for what's ahead! 🚀",
+  "resume": "https://drive.google.com/file/d/1SqRmR-2eXA1_tH23ghHqET0AqeBxebW5/view?usp=drive_link"
+}
