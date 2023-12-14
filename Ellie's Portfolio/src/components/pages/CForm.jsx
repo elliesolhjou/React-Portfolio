@@ -1,68 +1,86 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
-    const ContactForm = () => {
-        const [formData, setFormData] = useState({
-            name: '',
-            email: '',
-            message: '',
-        });
-
-        const handleChange = (e) => {
-            const { name, value } = e.target;
-            setFormData((prevData) => ({ ...prevData, [name]: value }));
-        };
-
-        const handleSubmit = (e) => {
-            e.preventDefault();
-
-            // Use your EmailJS service ID, template ID, and user ID
-            const serviceId = 'your_service_id';
-            const templateId = 'your_template_id';
-            const userId = 'your_user_id';
-
-            // Set the template parameters with form data
-            const templateParams = {
-                from_name: formData.name,
-                from_email: formData.email,
-                message: formData.message,
-            };
-
-            // Send the email using EmailJS
-            emailjs.send(serviceId, templateId, templateParams, userId)
-                .then((response) => {
-                    console.log('Email sent successfully:', response);
-                    // Reset form data after successful submission
-                    setFormData({
-                        name: '',
-                        email: '',
-                        message: '',
-                    });
-                })
-                .catch((error) => {
-                    console.error('Error sending email:', error);
-                });
-        };
-
-        return (
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} />
-                </label>
-                <br />
-                <label>
-                    Email:
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} />
-                </label>
-                <br />
-                <label>
-                    Message:
-                    <textarea name="message" value={formData.message} onChange={handleChange} />
-                </label>
-                <br />
-                <button type="submit">Send Message</button>
-            </form>
-        );
+import React from "react";
+import axios from "axios";
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
     };
-
-    export default ContactForm;
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    axios({
+      method: "POST",
+      url: "http://localhost:3002/send",
+      data: this.state,
+    }).then((response) => {
+      if (response.data.status === "success") {
+        alert("Message Sent.");
+        this.resetForm();
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    });
+  }
+  resetForm() {
+    this.setState({ name: " ", email: " ", message: " " });
+  }
+  render() {
+    return (
+      <div className="c-form">
+        <form
+          id="contact-form"
+          onSubmit={this.handleSubmit.bind(this)}
+          method="POST"
+        >
+          <div className="form-group pt-5">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              value={this.state.name}
+              onChange={this.onNameChange.bind(this)}
+            />
+          </div>
+          <div className="form-group pt-5">
+            <label htmlFor="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              value={this.state.email}
+              onChange={this.onEmailChange.bind(this)}
+            />
+          </div>
+          <div className="form-group pt-5">
+            <label htmlFor="message">Message</label>
+            <textarea
+              className="form-control"
+              rows="5"
+              id="message"
+              value={this.state.message}
+              onChange={this.onMessageChange.bind(this)}
+            />
+          </div>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
+    );
+  }
+  onNameChange(event) {
+    this.setState({ name: event.target.value });
+  }
+  onEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
+  onMessageChange(event) {
+    this.setState({ message: event.target.value });
+  }
+}
+export default App;

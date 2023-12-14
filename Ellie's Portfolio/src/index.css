@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   /* color: rgba(255, 255, 255, 0.87); */
-  background-color: #d1cfcf;
+  background-color: #EEF5FF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,6 +29,8 @@ footer {
   color: #a0aec0;
 
 }
+
+
 /* a:hover {
   color: #ee3d43cd;
 } */

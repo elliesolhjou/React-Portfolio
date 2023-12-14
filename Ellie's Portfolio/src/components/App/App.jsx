@@ -4,13 +4,14 @@ import Header from "../Header/Header";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import CForm from "../pages/CForm";
 import Footer from "../Footer/Footer";
 import Error from "../pages/Error";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App flex items-center justify-center flex-col dark:bg-black dark:text-white font-mono box-border overscroll-contain">
+    <div className="App flex items-center justify-center flex-col dark:bg-black dark:text-white font-poppins box-border overscroll-contain">
       <Header />
       <nav>
         <div className="hover:text-white">
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/contacts" element={<CForm />} /> */}
           <Route path="/*" element={<Error />} />
         </Routes>
       </main>

@@ -20,9 +20,9 @@ function Main() {
   }, []);
 
   const loaded = () => (
-    <div style={{ marginTop: "35px" }}>
-      <p className="about-bio indent-8 text-black-50 font-mono ">{about.bio}</p>
-      <div>
+    <div className="items-center" style={{ marginTop: "20px" }}>
+      <p className="about-bio indent-16 text-black-50 font-poppins text-xl ">{about.bio}</p>
+      <div className="justify-center items-center">
         <a href={about.resume} download={about.resume}>
           <button className="text-gray-800 dark:text-gray-100 dark:bg-red-500 dark:border-red-500 hover:text-gray-100 rounded-sm group border-2 px-4 py-3 my-2 flex items-center bg-blue-500 border-blue-500 dark:hover:bg-red-500 dark:hover:border-red-500">
             Download Resume
