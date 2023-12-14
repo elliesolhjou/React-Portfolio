@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Skills from "../pages/Skills";
 import "../pages/styles.css";
 import Headshot from "../../assets/headshot.png";
 
@@ -18,11 +20,11 @@ function Main() {
   }, []);
 
   const loaded = () => (
-    <div style={{ marginTop: "55px" }}>
+    <div style={{ marginTop: "35px" }}>
       <p className="about-bio indent-8 text-black-50 font-mono ">{about.bio}</p>
       <div>
         <a href={about.resume} download={about.resume}>
-          <button className="text-gray-800 dark:text-gray-100 dark:bg-none hover:text-gray-100 rounded-sm group border-2 px-4 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
+          <button className="text-gray-800 dark:text-gray-100 dark:bg-red-500 dark:border-red-500 hover:text-gray-100 rounded-sm group border-2 px-4 py-3 my-2 flex items-center bg-blue-500 border-blue-500 dark:hover:bg-red-500 dark:hover:border-red-500">
             Download Resume
             <span className="group-hover:-translate-x-2 repeat duration-500">
               <svg
@@ -44,6 +46,11 @@ function Main() {
             </span>
           </button>
         </a>
+      </div>
+      <div className="flex flex-wrap justify-center items-center ml-0 mr-0">
+        <div className="flex-col md:container md:mx-auto items-center basis-1/4 hover:basis-1/3 mb-8">
+          <Skills />
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@
   font-size: 1.5em;
 }
 
-.footer{
+/* .footer{
   position: fixed;
   left: 0;
   bottom: 0;
@@ -24,11 +24,11 @@
   text-align: center;
   padding: 1em;
 
-}
+} */
 
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .background-container {
