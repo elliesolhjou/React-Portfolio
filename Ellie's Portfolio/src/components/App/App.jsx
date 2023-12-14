@@ -4,7 +4,6 @@ import Header from "../Header/Header";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
-import CForm from "../pages/CForm";
 import Footer from "../Footer/Footer";
 import Error from "../pages/Error";
 import "./App.css";
@@ -22,7 +21,6 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<CForm />} />
           <Route path="/*" element={<Error />} />
         </Routes>
       </main>
