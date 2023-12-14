@@ -47,8 +47,8 @@ function Main() {
           </button>
         </a>
       </div>
-      <div className="flex flex-wrap justify-center items-center ml-0 mr-0">
-        <div className="flex-col md:container md:mx-auto items-center basis-1/4 hover:basis-1/3 mb-8">
+      <div className=" flex-wrap justify-center items-center ml-2 mr-">
+        <div className="flex-col md:mx-auto items-center basis-1/4 hover:basis-1/3 mb-8">
           <Skills />
         </div>
       </div>

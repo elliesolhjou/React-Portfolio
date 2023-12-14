@@ -28,7 +28,7 @@ function Skills() {
                     className="shadow-lg rounded-md shadow-[#160a0b] dark:hover:bg-red-500 hover:scale-110 hover:bg-blue-500 duration-500 p-2"
                     style={{ flex: "1 0 0" }}
                 >
-                    <p className="text-md">{skill.name}</p>
+                    <p className="text-[1.25vw]">{skill.name}</p>
                     <img
                         className="w-[150px] mx-auto pb-2"
                         src={skill.image}

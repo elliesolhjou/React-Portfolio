@@ -14,18 +14,13 @@ const Header = (props) => {
   return (
     <header className="flex items-center justify-between p-5 w-[50vw] md:container md:mx-auto border-b-[5px] border-black dark:border-red-500">
       <div className={`flex items-center ${darkMode ? "dark" : ""}`}>
-        {darkMode && (
-          <img
-            className="w-20 logo stroke-cyan-500"
-            alt="Logo"
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yNCAyMWgtM2wxLTNoMWwxIDN6bS0xMi45NzYtNC41NDNsOC45NzYtNC41NzV2Ni4xMThjLTEuMDA3IDIuMDQxLTUuNjA3IDMtOC41IDMtMy4xNzUgMC03LjM4OS0uOTk0LTguNS0zdi02LjYxNGw4LjAyNCA1LjA3MXptMTEuOTc2LjU0M2gtMXYtNy4yNmwtMTAuOTIzIDUuNTY4LTExLjA3Ny03IDEyLTUuMzA4IDExIDYuMjMxdjcuNzY5eiIvPjwvc3ZnPg=="
-          />
-        )}
-        {!darkMode && <p className="text-6xl font-bold dark:text-red-600"> {'</>'} </p>}
+        {darkMode && <p className="text-6xl mt-2 font-bold dark:text-red-600"> {'</>'} </p>
+        }
+        {!darkMode && <p className="text-6xl mt-2 font-bold dark:text-red-600"> {'</>'} </p>}
         <div className="ml-1">
           <h4
-            className={`text-7xl font-bold ${
-              darkMode ? "text-blue-500" : "text-red-600"
+            className={`text-6xl font-bold ${
+              darkMode ? "text-blue-600" : "text-red-600"
             }`}
           >
             Ellie&nbsp;Solhjou
