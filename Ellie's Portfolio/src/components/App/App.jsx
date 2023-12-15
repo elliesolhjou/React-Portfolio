@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App flex items-center justify-center flex-col dark:bg-black dark:text-white font-poppins box-border overscroll-contain">
+    <div className="App flex items-center justify-center flex-col dark:bg-black dark:text-white font-mono box-border overscroll-contain">
       <Header />
       <nav>
         <div className="hover:text-white">

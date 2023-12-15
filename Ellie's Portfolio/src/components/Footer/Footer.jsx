@@ -1,6 +1,6 @@
 export default function test() {
   return (
-    <footer className="flex flex-col text-black px-4 py-2 items-center justify-center rounded dark:bg-none dark:text-white font-poppins">
+    <footer className="flex flex-col text-black px-4 py-2 items-center justify-center rounded dark:bg-none dark:text-white font-mono">
       <div className="md:flex p-2 md:justify-evenly">
         <div className=" flex flex-row place-items-center gap-4 md:gap-8">
           <a

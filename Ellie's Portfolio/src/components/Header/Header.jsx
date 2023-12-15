@@ -12,7 +12,7 @@ const Header = (props) => {
   }, [darkMode]);
 
   return (
-    <header className="flex items-center justify-between p-5 w-[50vw] md:container md:mx-auto border-b-[5px] border-black dark:border-red-500">
+    <header className="flex items-center justify-between p-5 w-[50vw] md:container md:mx-auto border-b-[5px] border-black dark:border-red-500 pt-[5%]">
       <div className={`flex items-center ${darkMode ? "dark" : ""}`}>
         {darkMode && <p className="text-6xl mt-2 font-bold dark:text-red-600"> {'</>'} </p>
         }
