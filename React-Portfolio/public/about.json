@@ -1,0 +1,9 @@
+{
+  "name": "Ellie Solhjou",
+  "email": "elliesolhjou@gmail.com",
+  "headshot": "../src/assets/Screenshot 2023-10-15 at 6.30.46 PM.png",
+  "bio": "Greetings! I'm currently on an exhilarating path towards becoming a software engineer, fueled by my passion for creative problem-solving. My background in project management, where I played a crucial role in overseeing construction projects valued at over $200 million, revealed my keen attention to detail. Working closely with diverse IT and software engineering teams on innovative smart building projects during this time sparked my curiosity and enthusiasm for software engineering, and I was instantly captivated. \n In my recent bootcamp journey, I delved into programming languages such as HTML, CSS, JavaScript, and Python. However, it's not just about the code! I've also been honing essential soft skills like meticulous attention to detail, effective communication, and being a valuable team player. I firmly believe that cultivating these qualities is pivotal for thriving in the dynamic field of software engineering. I'm super excited about the exciting journey that lies ahead! 🚀",
+  "resume": "https://drive.google.com/file/d/1SqRmR-2eXA1_tH23ghHqET0AqeBxebW5/view?usp=drive_link",
+  "skills": ["HTML", "CSS, Express", "JavaScript", "React", "Node.js", "Python", "SQL", "MongoDB", "Git", "GitHub", "Heroku", "Netlify", "Postman", "VS Code", "Slack", "Trello", "Jira", "Asana", "Microsoft Office", "Google Suite"]
+}
+
