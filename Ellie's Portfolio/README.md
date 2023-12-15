@@ -31,5 +31,6 @@ Special thanks to Jan Horak and the entire instructional team for their guidance
 - Add animation or dynamic background to enhance user experience.
 - Implement a contact me form for better user engagement.
 - Continuous improvement on the project section with regular updates.
+- Add Responsive Design for Header
 
 Feel free to reach out for collaboration or feedback. Happy coding!
