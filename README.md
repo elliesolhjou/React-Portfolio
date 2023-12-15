@@ -6,7 +6,7 @@ Hey there! 👋 I'm Ellie Solhjou, and I'm on a thrilling journey to become a so
 
 ## Deployed Application
 
-[Link to Deployed Application](https://your-deployed-app-url.com)
+[Link to Deployed Application](https://main--elliesolhjou.netlify.app/)
 
 ## Technologies Used
 
