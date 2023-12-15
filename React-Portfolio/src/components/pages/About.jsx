@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Skills from "../pages/Skills";
 import "../pages/styles.css";
-import Headshot from "../../assets/headshot.png";
+
 
 function Main() {
   const [about, setAbout] = useState([]);
